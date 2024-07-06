@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      // Скрипт для плавной прокрутки
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll('a[href^="#"]');
+        for (const link of links) {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = link.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        }
+      });
+    </script>
+  </head>
+  <body class="m-10">
+    <header class="flex justify-between">
+      <div class="flex justify-between">
+        <span> ..._Brand </span>
+      </div>
+      <div class="text-center">
+        <span
+          class="p-2 text-center mr-4 cursor-pointer hover:rounded-md hover:text-white hover:bg-blue-300"
+          ><a href="#about">О нас</a></span
+        >
+        <span
+          class="p-2 text-center mr-4 cursor-pointer hover:rounded-md hover:text-white hover:bg-blue-300"
+          ><a href="#service">Услуги</a></span
+        >
+        <span
+          class="p-2 text-center mr-4 cursor-pointer hover:rounded-md hover:text-white hover:bg-blue-300"
+          ><a href="#Contact">Контакты</a></span
+        >
+      </div>
+    </header>
+    <div class="mt-20">
+      <div class="flex">
+        <span class="w-full mt-44">
+          <span class="font-semibold text-5xl w-full pt-44 text-yellow-500"
+            >Качество</span
+          >
+          <span class="font-semibold text-5xl w-full mt-10"
+            >работы персональный подход специально для вас</span
+          >
+          <div class="mt-3">
+            <span class="font-normal text-1xl"
+              >Ищете качественную установку кондиционера? Наши специалисты
+              сделают это быстро и надежно, обеспечивая вам прохладу и комфорт
+              круглый год. Свяжитесь с нами для консультации и установки!</span
+            >
+          </div>
+        </span>
+        <div>
+          <img class="" src="/img/img-1.webp" alt="" />
+        </div>
+        <div class="mt-96 pt-28 absolute">
+          <button
+            class="p-1 w-36 text-lg font-medium bg-blue-200 rounded-xl text-white hover:bg-blue-300 text-center"
+          >
+            <a href="tel:+77077392257">Позвонить</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="flex">
+        <img class="max-w-4xl" src="/img/cheal.jpg" alt="" />
+        <span class="font-semibold text-3xl w-full mt-36">
+          <span class="text-yellow-500">Кондиционер - это комфорт</span> в вашем
+          доме!
+          <div>
+            <span class="font-normal text-2xl"
+              >Мы профессионально устанавливаем кондиционеры быстро и
+              качественно. Доверьтесь нашему опыту и наслаждайтесь прохладой в
+              любое время года!</span
+            >
+          </div>
+        </span>
+      </div>
+    </div>
+
+    <div id="service">
+      <div class="text-center">
+        <span class="font-semibold text-4xl w-full mt-10">
+          <span class="font-semibold text-5xl w-full pt-44 text-yellow-500"
+            ><br />Услуги<br /></span
+          >предоставляемые нами
+        </span>
+      </div>
+
+      <div class="flex">
+        <div
+          class="m-24 w-80 h-96 bg-gray-50 border border-b-4 border-blue-300 rounded-2xl flex justify-center pt-5 hover:bg-blue-300 hover:text-white cursor-pointer"
+        >
+          <div
+            class="w-24 h-32 bg-gray-50 border border-b-4 border-blue-300 rounded-2xl text-center"
+          >
+            <img src="/img/air-conditioner.png" alt="" />
+          </div>
+          <span class="absolute pt-36 font-bold text-2xl">Установка</span>
+          <span class="w-48 absolute pt-48 font-normal text-center"
+            >Мы профессионально занимаемся установкой кондиционеров, обеспечивая
+            комфорт и эффективность вашего помещения</span
+          >
+        </div>
+        <div
+          class="m-24 w-80 h-96 bg-gray-50 border border-b-4 border-blue-300 rounded-2xl flex justify-center pt-5 hover:bg-blue-300 hover:text-white cursor-pointer"
+        >
+          <div
+            class="w-24 h-32 bg-gray-50 border border-b-4 border-blue-300 rounded-2xl text-center"
+          >
+            <img src="/img/wrench.png" alt="" />
+          </div>
+          <span class="absolute pt-36 font-bold text-2xl">Ремонт</span>
+          <span class="w-52 absolute pt-48 font-normal text-center"
+            >Мы предоставляем высококачественные услуги по ремонту
+            кондиционеров, гарантируя надежность и долговечность вашего
+            оборудования</span
+          >
+        </div>
+        <div
+          class="m-24 w-80 h-96 bg-gray-50 border border-b-4 border-blue-300 rounded-2xl flex justify-center pt-5 hover:bg-blue-300 hover:text-white cursor-pointer"
+        >
+          <div
+            class="w-24 h-32 bg-gray-50 border border-b-4 border-blue-300 rounded-2xl text-center"
+          >
+            <img src="/img/cleaning.png" alt="" />
+          </div>
+          <span class="absolute pt-36 font-bold text-2xl">Обслуживание</span>
+          <span class="w-52 absolute pt-48 font-normal text-center"
+            >Мы осуществляем комплексное обслуживание кондиционеров, обеспечивая
+            их надежную работу и долговечность</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="h-pxf w-9/12 bg-blue-300 ml-44 mr-44 mt-5"></div>
+    <div class="">
+      <div class="flex justify-center items-center">
+        <span id="Contact" class="font-semibold text-3xl text-yellow-500"
+          >Контакты</span
+        >
+      </div>
+      <div class="flex justify-center items-center gap-96 text-center mt-16">
+        <span
+          >Вызов на
+          <span class="text-blue-300 font-semibold text-xl"
+            ><br /><a href="tel:+77077392257">Мобильный</a></span
+          ></span
+        >
+        <span
+          >Написать на
+          <span class="text-green-300 font-semibold text-xl"
+            ><br /><a href="https://wa.me/87077392257">WhatsApp</a></span
+          ></span
+        >
+      </div>
+      <div class="h-px w-9/12 bg-blue-300 ml-44 mr-44 mt-5"></div>
+    </div>
+    <div id="about" class="text-center">
+      <span class="font-semibold text-5xl w-full pt-44 text-yellow-500"
+        ><br />О нас<br
+      /></span>
+      <div class="font-normal text-2xl mt-10 pt-11">
+        <span>
+          Наша компания предоставляет высококачественные услуги по установке,
+          ремонту и обслуживанию кондиционеров. Мы работаем с лучшими
+          специалистами в отрасли, чтобы гарантировать надежность и
+          долговечность вашего оборудования. Доверьтесь нашему опыту и
+          наслаждайтесь комфортом в любое время года.
+        </span>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
